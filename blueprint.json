@@ -15,8 +15,32 @@
         "level": "alpha",
         "patch": 0
       }
-    }
+    },
+    "software": {
+      "display": {
+        "title": "Free radius",
+        "label": "radius"
+      }
+    },
+    "timestamp": "2018-02-09T12:44:54+11:00"
   },
   "software": {
+    "base": {
+      "name": "radius",
+      "publisher_namespace": "EnginesSystem",
+      "type_path": "radius",
+      "deployment_type": "worker",
+      "hostname": "radius",
+      "set_state": "nocontainer",
+      "memory": {
+        "required": 96,
+        "recommended": 96
+      },
+      "run_as_user": "radius"
+    },
+    "disposition": {
+      "kerberos_support": true,
+      "start_syslog": true
+    }
   }
 }
